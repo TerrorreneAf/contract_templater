@@ -21,7 +21,7 @@ jobs:
 
       - name: Build (PyInstaller)
         run: |
-          pyinstaller --windowed --onefile --icon assets\app.ico \
+          pyinstaller --windowed --onefile \
             --add-data "schemas:schemas" \
             --add-data "templates:templates" \
             --add-data "assets:assets" \
