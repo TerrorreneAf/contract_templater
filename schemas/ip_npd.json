@@ -1,0 +1,54 @@
+{
+  "title": "Договор с ИП — НПД",
+  "fields": [
+    { "key": "contract_seq", "label": "№ договора за текущую дату (1,2,3...); 0 = авто", "type": "int", "required": true, "default": "auto" },
+    { "key": "contract_date", "label": "Дата договора", "type": "date", "required": true, "default": "today", "editable_by_checkbox": true, "checkbox_label": "Ввести дату вручную" },
+
+    { "key": "fio", "label": "ФИО индивидуального предпринимателя", "type": "text", "required": true },
+	{ "key": "initials", "label": "Инициалы для подписи (Фамилия И. О.) — можно оставить пустым", "type": "text", "required": false },
+    { "key": "phone", "label": "Номер телефона", "type": "text", "required": true },
+	{ "key": "email", "label": "e-mail", "type": "text", "required": true },
+	
+    { "key": "ogrnip", "label": "ОГРНИП", "type": "text", "required": true },
+
+    { "key": "reg_address", "label": "Адрес регистрации", "type": "multiline", "required": true },
+
+    { "key": "inn", "label": "ИНН налогоплательщика", "type": "text", "required": true },
+
+    { "key": "bank_name", "label": "Название банка", "type": "text", "required": true },
+    { "key": "bank_account", "label": "Номер счета", "type": "text", "required": true },
+    { "key": "bank_bik", "label": "БИК", "type": "text", "required": true },
+    { "key": "bank_corr", "label": "Корр. счет", "type": "text", "required": true },
+
+    { "key": "course_name", "label": "Название курса", "type": "text", "required": true },
+
+    { "key": "work_start", "label": "Дата начала работ", "type": "date", "required": true },
+    { "key": "work_end", "label": "Дата окончания работ", "type": "date", "required": true },
+
+    { "key": "days_count", "label": "Количество дней", "type": "int", "required": true },
+    { "key": "lessons_count", "label": "Количество уроков", "type": "int", "required": true },
+	{ "key": "curriculums_count", "label": "Количество учебных планов", "type": "int", "required": true },
+
+    { "key": "method_materials_start", "label": "Разработка методических материалов: начало", "type": "date", "required": true },
+	{ "key": "method_materials_end",   "label": "Разработка методических материалов: окончание", "type": "date", "required": true },
+
+	{ "key": "course_recording_start", "label": "Запись курса: начало", "type": "date", "required": true },
+	{ "key": "course_recording_end",   "label": "Запись курса: окончание", "type": "date", "required": true },
+
+	{ "key": "photosession_start", "label": "Фотосессия: начало", "type": "date", "required": true },
+	{ "key": "photosession_end",   "label": "Фотосессия: окончание", "type": "date", "required": true },
+
+	{ "key": "short_vertical_start", "label": "Короткие вертикальные видео: начало", "type": "date", "required": true },
+	{ "key": "short_vertical_end",   "label": "Короткие вертикальные видео: окончание", "type": "date", "required": true },
+
+	{ "key": "extra_horizontal_start", "label": "Горизонтальные доп. видео: начало (опционально)", "type": "date", "required": false },
+	{ "key": "extra_horizontal_end",   "label": "Горизонтальные доп. видео: окончание (опционально)", "type": "date", "required": false },
+
+    { "key": "total_sum", "label": "Общая сумма", "type": "money", "required": true },
+    { "key": "advance_sum", "label": "Аванс", "type": "money", "required": true },
+
+    { "key": "final_part", "label": "Заключительная часть (сумма)", "type": "money", "required": true },
+
+    { "key": "appendix_count", "label": "Количество приложений (сделано на всякий, сейчас не работает)", "type": "int", "required": true, "default": 3,  "editable_by_checkbox": true,  "checkbox_label": "Изменить число вложений" }
+  ]
+}
